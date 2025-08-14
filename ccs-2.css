@@ -1680,14 +1680,14 @@ html, body { overflow-x: hidden; }
 
 /* Íconos más pequeños globalmente (música, dress, detalles) */
 .icon-music lord-icon,
-.icon-details lord-icon { width: 130px !important; height: 130px !important; }
-.icon-dress svg.bowtie-anim { width: 130px !important; height: 130px !important; }
+.icon-details lord-icon { width: 110px !important; height: 110px !important; }
+.icon-dress svg.bowtie-anim { width: 110px !important; height: 110px !important; }
 
 /* Íconos más pequeños en móviles */
 @media (max-width: 768px) {
 	.icon-music lord-icon,
-	.icon-details lord-icon { width: 130px !important; height: 130px !important; }
-	.icon-dress svg.bowtie-anim { width: 130px !important; height: 130px !important; }
+	.icon-details lord-icon { width: 110px !important; height: 110px !important; }
+	.icon-dress svg.bowtie-anim { width: 110px !important; height: 110px !important; }
 	.events-section .event-icon lord-icon { width: 320px !important; height: 320px !important; }
 }
 
