@@ -1672,7 +1672,7 @@ html, body { overflow-x: hidden; }
 
 /* Acentuar líneas y blanco en música, dress y detalles */
 .icon-music, .icon-dress, .icon-details { color: #ffffff; }
-.icon-dress .bowtie-anim g { stroke-width: 4; }
+.icon-dress .bowtie-anim g { stroke-width: 1.5; }
 .icon-music lord-icon, .icon-details lord-icon { filter: drop-shadow(0 0 10px rgba(255,255,255,0.6)); }
 
 /* Asegurar que el contenedor de iconos en party cards no limite el tamaño */
