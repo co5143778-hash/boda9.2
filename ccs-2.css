@@ -1391,7 +1391,7 @@ html, body { overflow-x: hidden; }
   border: 3px solid hsl(var(--gold)) !important;
   box-shadow: 0 12px 24px rgba(0,0,0,0.12), inset 0 0 0 1px rgba(255,255,255,0.35);
   color: #ffffff;
-  max-width: 360px;
+  max-width: 420px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -1672,20 +1672,23 @@ html, body { overflow-x: hidden; }
 
 /* Acentuar líneas y blanco en música, dress y detalles */
 .icon-music, .icon-dress, .icon-details { color: #ffffff; }
-.icon-dress .bowtie-anim g { stroke-width: 4; }
+.icon-dress .bowtie-anim g { stroke-width: 1.5; }
 .icon-music lord-icon, .icon-details lord-icon { filter: drop-shadow(0 0 10px rgba(255,255,255,0.6)); }
 
-/* Íconos más grandes globalmente (música, dress, detalles) */
-.icon-music lord-icon,
-.icon-details lord-icon { width: 480px !important; height: 480px !important; }
-.icon-dress svg.bowtie-anim { width: 480px !important; height: 480px !important; }
+/* Asegurar que el contenedor de iconos en party cards no limite el tamaño */
+.party-card .party-icon { width: auto !important; height: auto !important; padding: 0 !important; }
 
-/* Íconos más grandes en móviles */
+/* Íconos más pequeños globalmente (música, dress, detalles) */
+.icon-music lord-icon,
+.icon-details lord-icon { width: 110px !important; height: 110px !important; }
+.icon-dress svg.bowtie-anim { width: 110px !important; height: 110px !important; }
+
+/* Íconos más pequeños en móviles */
 @media (max-width: 768px) {
 	.icon-music lord-icon,
-	.icon-details lord-icon { width: 440px !important; height: 440px !important; }
-	.icon-dress svg.bowtie-anim { width: 440px !important; height: 440px !important; }
-	.events-section .event-icon lord-icon { width: 380px !important; height: 380px !important; }
+	.icon-details lord-icon { width: 110px !important; height: 110px !important; }
+	.icon-dress svg.bowtie-anim { width: 110px !important; height: 110px !important; }
+	.events-section .event-icon lord-icon { width: 320px !important; height: 320px !important; }
 }
 
 /* Reducir alto visual de la galería en móviles (sin alterar tamaño de imágenes) */
