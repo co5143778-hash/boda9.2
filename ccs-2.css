@@ -1678,17 +1678,17 @@ html, body { overflow-x: hidden; }
 /* Asegurar que el contenedor de iconos en party cards no limite el tamaño */
 .party-card .party-icon { width: auto !important; height: auto !important; padding: 0 !important; }
 
-/* Íconos más grandes globalmente (música, dress, detalles) */
+/* Íconos más pequeños globalmente (música, dress, detalles) */
 .icon-music lord-icon,
-.icon-details lord-icon { width: 420px !important; height: 420px !important; }
-.icon-dress svg.bowtie-anim { width: 420px !important; height: 420px !important; }
+.icon-details lord-icon { width: 300px !important; height: 300px !important; }
+.icon-dress svg.bowtie-anim { width: 300px !important; height: 300px !important; }
 
-/* Íconos más grandes en móviles */
+/* Íconos más pequeños en móviles */
 @media (max-width: 768px) {
 	.icon-music lord-icon,
-	.icon-details lord-icon { width: 380px !important; height: 380px !important; }
-	.icon-dress svg.bowtie-anim { width: 380px !important; height: 380px !important; }
-	.events-section .event-icon lord-icon { width: 360px !important; height: 360px !important; }
+	.icon-details lord-icon { width: 260px !important; height: 260px !important; }
+	.icon-dress svg.bowtie-anim { width: 260px !important; height: 260px !important; }
+	.events-section .event-icon lord-icon { width: 320px !important; height: 320px !important; }
 }
 
 /* Reducir alto visual de la galería en móviles (sin alterar tamaño de imágenes) */
