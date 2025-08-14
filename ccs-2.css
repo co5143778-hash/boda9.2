@@ -935,9 +935,10 @@ body {
   background: transparent;
   border: none;
   padding: 0;
-  width: 48px; height: 48px;
+  width: 140px; height: 140px;
   margin: 0 auto 1rem;
 }
+.events-section .event-icon lord-icon { width: 140px !important; height: 140px !important; }
 .events-section .event-icon svg * {
   stroke: #ffffff !important;
   fill: none !important;
@@ -1688,7 +1689,8 @@ html, body { overflow-x: hidden; }
 	.icon-music lord-icon,
 	.icon-details lord-icon { width: 110px !important; height: 110px !important; }
 	.icon-dress svg.bowtie-anim { width: 110px !important; height: 110px !important; }
-	.events-section .event-icon lord-icon { width: 320px !important; height: 320px !important; }
+	.events-section .event-icon { width: 120px !important; height: 120px !important; }
+	.events-section .event-icon lord-icon { width: 120px !important; height: 120px !important; }
 }
 
 /* Reducir alto visual de la galería en móviles (sin alterar tamaño de imágenes) */
