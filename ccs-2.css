@@ -312,7 +312,7 @@ body {
 .hero-split {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 80vh; /* actualizado a 80vh */
+    height: 72vh; /* ajusta para menos recorte */
     border-radius: 12px;
     overflow: hidden;
     box-shadow: none; /* la sombra viene del contenedor padre */
@@ -325,8 +325,8 @@ body {
     /* use right image here with fallback */
     background-image: url('https://drive.google.com/thumbnail?id=1rO4j02O7TXPqVVCs8fvgL8t_2_lps_LB&sz=w2000');
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    background-size: cover;
+    background-position: center top;
     background-attachment: scroll;
 }
 
@@ -1648,8 +1648,8 @@ html, body { overflow-x: hidden; }
 .hero-wrapper { padding-top: 0 !important; padding-bottom: 0 !important; }
 @media (max-width: 768px) {
   .hero-split { height: auto !important; }
-  .hero-left { height: 55vh !important; }
-  .hero-right { height: 80vh !important; }
+  .hero-left { height: 60vh !important; background-position: center; }
+  .hero-right { height: 60vh !important; }
 }
 
 .animated-camera lord-icon {
