@@ -324,9 +324,10 @@ body {
     position: relative;
     /* use right image here with fallback */
     background-image: url('https://drive.google.com/thumbnail?id=1rO4j02O7TXPqVVCs8fvgL8t_2_lps_LB&sz=w2000');
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 
 /* Lado derecho: sin efecto, solo imagen estática */
