@@ -1647,9 +1647,9 @@ html, body { overflow-x: hidden; }
 /* Portada: pegar al borde superior y ampliar en móviles */
 .hero-wrapper { padding-top: 0 !important; padding-bottom: 0 !important; }
 @media (max-width: 768px) {
-  .hero-split { height: auto !important; }
-  .hero-left { height: 60vh !important; background-position: center; }
-  .hero-right { height: 60vh !important; }
+  .hero-split { height: 100vh !important; }
+  .hero-left { height: 100vh !important; background-position: center center; background-size: cover; }
+  .hero-right { display: none !important; }
 }
 
 .animated-camera lord-icon {
