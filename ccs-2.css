@@ -845,6 +845,7 @@ body {
 /* Responsive */
 @media (max-width: 1024px) {
     .hero-split { grid-template-columns: 1fr; height: 60vh; }
+    .hero-left { background-size: contain; background-position: center top; }
 }
 
 @media (max-width: 768px) {
