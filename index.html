@@ -4,7 +4,7 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Rafael & Juana - Invitación de Boda</title>
-         <link rel="stylesheet" href="ccs-2.css?v=9fcc732">
+         <link rel="stylesheet" href="ccs-2.css?v=9fcc733">
      <script src="https://cdn.lordicon.com/lordicon.js"></script>
      <script src="https://animatedicons.co/scripts/embed-animated-icons.js"></script>
       <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -118,8 +118,27 @@
                 </div>
                 <!-- Lado derecho: imagen sin efecto -->
                 <div class="hero-right">
-                    <img src="https://drive.google.com/uc?id=1OD85FypcqBIrtPc498UVRkRXTggDyLc&export=download" alt="Portada lateral derecha" onerror="this.onerror=null;this.src='https://drive.google.com/thumbnail?id=1OD85FypcqBIrtPc498UVRkRXTggDyLc&sz=w2000';" />
+                    <img id="heroRightImg" alt="Portada lateral derecha" />
                 </div>
+                <script>
+                  (function(){
+                    var img = document.getElementById('heroRightImg');
+                    if(!img) return;
+                    var ids = ['1OD85FypcqBIrtPc498UVRkRXTggDyLc-', '1OD85FypcqBIrtPc498UVRkRXTggDyLc'];
+                    var urls = [];
+                    for (var j = 0; j < ids.length; j++) {
+                      var id = ids[j];
+                      urls.push('https://drive.usercontent.google.com/uc?id=' + id + '&export=download');
+                      urls.push('https://drive.google.com/uc?export=view&id=' + id);
+                      urls.push('https://drive.google.com/uc?id=' + id + '&export=download');
+                      urls.push('https://drive.google.com/thumbnail?id=' + id + '&sz=w2000');
+                    }
+                    var i = 0;
+                    function tryNext(){ if(i >= urls.length) return; img.src = urls[i++]; }
+                    img.onerror = tryNext;
+                    tryNext();
+                  })();
+                </script>
             </div>
         </div>
     </div>
