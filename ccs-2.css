@@ -322,10 +322,11 @@ body {
 /* Lado izquierdo: imagen fija con efecto scroll (parallax) */
 .hero-left {
     position: relative;
-    background-image: url('https://drive.google.com/thumbnail?id=1OD85FypcqBIrtPc498UVRkRXTggDyLc&sz=w2000');
+    /* use right image here with fallback */
+    background-image: url('https://drive.google.com/thumbnail?id=1rO4j02O7TXPqVVCs8fvgL8t_2_lps_LB&sz=w2000');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* mantiene efecto */
+    background-attachment: fixed;
 }
 
 /* Lado derecho: sin efecto, solo imagen estática */
