@@ -322,12 +322,7 @@ body {
 /* Lado izquierdo: imagen fija con efecto scroll (parallax) */
 .hero-left {
     position: relative;
-    /* use right image here with fallback */
-    background-image: url('https://drive.google.com/thumbnail?id=1rO4j02O7TXPqVVCs8fvgL8t_2_lps_LB&sz=w2000');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-    background-attachment: scroll;
+    background: transparent;
 }
 .hero-left img.hero-left-zoomout {
     position: absolute;
